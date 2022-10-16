@@ -6,20 +6,22 @@
 	box-sizing: border-box;
 	pointer-events: none;
 	user-select: none !important;
+	cursor: crosshair !important;
+
 }
 body {
 	font-family: 'Wendy One', sans-serif;
 	margin: 0;
 	overflow: hidden;
 	background: #020202;
-	cursor: crosshair;
+	cursor: crosshair !important;
 }
 canvas {
 	display: block;
 }
 .cake {
 	position: absolute;
-	bottom: 20vh;
+	bottom: 23vh;
 	left: 50%;
 	transform: translateX(-50%) scale(1.8);
 	-webkit-transform: translateX(-50%) scale(1.8);
@@ -406,4 +408,32 @@ span {
 	to {
 		opacity: 1;
 	}
+}
+
+
+.from {
+    margin: 20px auto;
+    width: 0;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    animation: anime 2s 7.5s steps(30) both;
+    overflow: hidden;
+    -webkit-animation: anime 2s 7.5s steps(30) both;
+		position: absolute;
+		bottom: 0;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+@keyframes anime {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 250px;
+    }
 }
