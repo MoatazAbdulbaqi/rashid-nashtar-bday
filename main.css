@@ -41,15 +41,22 @@ canvas {
 	background: #ffffff;
 	border-radius: 10px;
 	position: absolute;
+	/*top: 228px;
+	*/
 	top: 228px;
 	left: 50%;
 	margin-left: -2.4px;
 	margin-top: -8.33333333px;
 	width: 5px;
 	height: 35px;
-	transform: translateY(-300px);
+	transform: translateY(-50vh);
 	backface-visibility: hidden;
 	animation: in 500ms 6s ease-out forwards;
+	-webkit-transform: translateY(-50vh);
+	-moz-transform: translateY(-50vh);
+	-ms-transform: translateY(-50vh);
+	-o-transform: translateY(-50vh);
+	-webkit-animation: in 500ms 6s ease-out forwards;
 }
 .velas:after,
 .velas:before {
@@ -62,10 +69,12 @@ canvas {
 .velas:after {
 	top: 25%;
 	left: 0;
+	transform: translateY(-50vh);
 }
 .velas:before {
 	top: 45%;
 	left: 0;
+	transform: translateY(-50vh);
 }
 
 /* ============================================== Fire
